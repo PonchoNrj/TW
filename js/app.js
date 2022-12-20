@@ -1,11 +1,17 @@
-var url = window.location.href; 
-var swLocation = '/TW/sw.js';  // el nombre de la carpeta del url https://ponchonrj.github.io/TW/
 
-if (navigator.serviceWorker) {
-    if ( url.includes('localhost')) {
+var url = window.location.href;
+var swLocation = '/TW/sw.js';    //NOMBRE DE LA CARPETA QUE ESTA EN EL URL
+
+
+if ( navigator.serviceWorker ) {
+
+
+    if ( url.includes('localhost') ) {
         swLocation = '/sw.js';
     }
-    navigator.serviceWorker.register( swLocation);
+
+
+    navigator.serviceWorker.register( swLocation );
 }
 
 
