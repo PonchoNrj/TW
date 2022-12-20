@@ -1,6 +1,6 @@
 
 var url = window.location.href;
-var swLocation = '/TW/sw.js';    //NOMBRE DE LA CARPETA QUE ESTA EN EL URL
+var swLocation = '/tw/sw.js';    //NOMBRE DE LA CARPETA QUE ESTA EN EL URL
 
 
 if ( navigator.serviceWorker ) {
